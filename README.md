@@ -49,7 +49,7 @@ Emoji files contain five columns. The first is a list of emojis separated by ";"
 
 The Tweet-IDs that help recover (hydrate) all collected datasets are organized as follows:
 * Tweet-ID files are stored in one folder called CovidIds.
-* The file names have the following pattern: a prefix “coronavirus-tweet-id" followed by "-yyyy-mmfr-ids(_chunk).txt” where yyyy is 2020, mm is the month (O1 for january etc), optionnally there might be chunk numbers if the original monthly files have to be split into chunks if they pass the 25 Mb github limit.
+* The file names have the following pattern: a prefix “coronavirus-tweet-id" followed by "-yyyy-mmfr-ids(_chunk).txt” where yyyy is 2020, mm is the month (O1 for january etc), optionnally there might be chunk numbers if the original monthly files have to be split into chunks if they exceed the 25 Mb github limit.
 
 ## Notes About the Data
 A few notes about this data: 
