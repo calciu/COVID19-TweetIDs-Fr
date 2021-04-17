@@ -49,7 +49,7 @@ Emoji files contain five columns. The first is a list of emojis separated by ";"
 
 The Tweet-IDs that help recover (hydrate) all collected datasets are organized as follows:
 * Tweet-ID files are stored in one folder called CovidIds.
-* The file names have the following pattern: a prefix “coronavirus-tweet-id" followed by "-yyyy-mmfr-ids(_chunk).txt” where yyyy is 2020, mm is the month (O1 for january etc), optionnally there might be chunk numbers if the original monthly files have to be split into chunks if they pass the 25 Mb github limit.
+* The file names have the following pattern: a prefix “coronavirus-tweet-id" followed by "-yyyy-mmfr-ids(_chunk).txt” where yyyy is the year (2020), mm is the month (O1 for january etc). Occasionnally there might be chunk numbers if the original monthly files have to be split into chunks if they exceed the 25 Mb github limit.
 
 ## Notes About the Data
 A few notes about this data: 
@@ -87,33 +87,22 @@ This dataset is licensed under the Creative Commons Attribution-NonCommercial-Sh
 
 Sophie Balech, Christophe Benavent, and Mihai Calciu (2020), The First French COVID19 Lockdown Twitter Dataset, arXiv:2005.05075 [cs.SI]
 
-## Statistics Summary (v0.2 55 Lockdown days up to May 11 2020)
-Number of Tweets : ** 2598250 **
+## Statistics Summary (v0.1 11 Months up to November 31 2020)
+Number of Tweets in French : ** 16,404,102 **
 
-| ISO | Language  | No. tweets | % total tweets |
-| -------: | ------:  | --------: |---------: |
-| fr | French  | 2474086 | 95.22 |
-| en | English  | 31614 | 1.22 |
-| es | Spanish  | 2997 | 0.12 |
-| ca | Catalan  | 2412 | 0.09 |
-| pt | Portuguese  | 1817 | 0.07 |
-| it | Italian  | 1153 | 0.04 |
-| ht | Haitian  | 953 | 0.04 |
-| ja | Japanese  | 731 | 0.03 |
-| tr | Turkish  | 672 | 0.03 |
-| in | Indonesian  | 588 | 0.02 |
-| de | German  | 505 | 0.02 |
-| no | Norvegian  | 345 | 0.01 |
-| tl | Tagalog (Philipnes)  | 280 | 0.01 |
-| ar | Arabic  | 264 | 0.01 |
-| eu | Basque  | 263 | 0.01 |
-| ro | Romanian  | 254 | 0.01 |
-| nl | Dutch  | 249 | 0.01 |
-| et | Estonian  | 245 | 0.01 |
-| da | Danish  | 192 | 0.01 |
-| sv | Swedish  | 185 | 0.01 |
-
-
+| Month | No. tweets | % total tweets |
+| -------: | --------: |---------: |
+| 1| 61918| 0,38% |
+| 2| 560829| 3,42% |
+| 3| 756954| 4,61% |
+| 4| 520674| 3,17% |
+| 5| 354232| 2,16% |
+| 6| 943056| 5,75% |
+| 7| 1025250| 6,25% |
+| 8| 1357073| 8,27% |
+| 9| 3286953| 20,04% |
+| 10| 4080225| 24,87% |
+| 11| 3456930| 21,07% |
 
 # Inquiries
 If you have technical questions about the data collection, please contact Mihai Calciu at **mihai.calciu[at]univ-lille[dot]fr**.
