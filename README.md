@@ -10,10 +10,10 @@ Additionally we release annotations of this corpus using sentiment and emotions 
 
 ## Data Organization
 ### Tweet Sentiment and Emotion Annotations Files
-Sentiment and Emotion Annotations files (in .csv format) are available in the CovidAnnot folder. Their names have the following pattern dff_method_month_chunk.csv (dff meaning data frame free and the method is nrc,lsd or emoji). 
+Sentiment and Emotion Annotations files (in .csv format) are available in the CovidAnnot folder. Their names have the following pattern method_month_chunk.csv (method is nrc,lsd or emoji). 
 
 
-#### dff\_nrc1-5fr.csv, dff\_nrc6fr.csv, ...
+#### nrc1-5fr.csv, nrc6fr.csv, ...
 Nrc files contain ten columns: the first eight represent emotions frequencies and the last two sentiments frequencies per tweet
 
 | anger | anticipation | disgust | fear | joy | sadness | surprise | trust | negative | positive |
@@ -23,7 +23,7 @@ Nrc files contain ten columns: the first eight represent emotions frequencies an
 |     1 |            1 |       0 |    2 |   1 |       1 |        1 |     4 |        2 |        2 |
 |     0 |            1 |       0 |    2 |   0 |       1 |        0 |     0 |        1 |        0 |
 
-#### dff\_lsd1-5fr.csv, dff\_lsd6fr.csv ..
+#### lsd1-5fr.csv, lsd6fr.csv ..
 Lsd files contain four columns negative and positive sentiment frequency, number of words and identification number of the tweets
     
 | Neg\_lsdfr | Pos\_lsdfr | nb | id |
@@ -34,7 +34,7 @@ Lsd files contain four columns negative and positive sentiment frequency, number
 |          1 |          1 | 26 |  4 |
 
 
-#### dff\_emoji1-5fr.csv, dff\_emoji6fr.csv, ...
+#### emoji1-5fr.csv, emoji6fr.csv, ...
 Emoji files contain five columns. The first is a list of emojis separated by ";", the second indicates the number of emojis per tweet. The other three indicate the minimum, average and maximum sentiment score (on a scale from -1 to 1) 
 
 
@@ -45,11 +45,21 @@ Emoji files contain five columns. The first is a list of emojis separated by ";"
 | 📷;     |      1 |       0.430 |       0.4300 |       0.430 |
 | 😆;😅;🤣; |      3 |       0.178 |       0.2935 |       0.409 |
 
+#### helper files to associate annotations to tweets and their text (ids, date & twtype)
+There are also three kinds of hepler files that allow for associations between not publishable tweets contents and annotations. They are headless one column .csv files and their prefix ids, date and twtype indicate the additional information they contain.
+  - ids*.csv files contain the unique tweet identitiers that might be associated to each annotation.
+  - date*.csv files contain the parsed date of each tweet corresponding to each annotation.
+  - twtypoe*.csv files contain the type of each tweet corresponding to each annotation (original, quote, reply and retweet)
+
 ### Tweet IDs files
 
 The Tweet-IDs that help recover (hydrate) all collected datasets are organized as follows:
 * Tweet-ID files are stored in one folder called CovidIds.
+<<<<<<< HEAD
 * The file names have the following pattern: a prefix “coronavirus-tweet-id" followed by "-yyyy-mmfr-ids(_chunk).txt” where yyyy is the year (2020), mm is the month (O1 for january etc). Occasionnally there might be chunk numbers if the original monthly files have to be split into chunks if they exceed the 25 Mb github limit.
+=======
+* The file names have the following pattern: a prefix “coronavirus-tweet-id" followed by "-yyyy-mmfr-ids(_chunk).txt” where yyyy is 2020, mm is the month (O1 for january etc), optionnally there might be chunk numbers if the original monthly files have to be split into chunks if they exceed the 25 Mb github limit.
+>>>>>>> c478fb3306b9813000387e9e02fac028547e3c78
 
 ## Notes About the Data
 A few notes about this data: 
@@ -87,8 +97,13 @@ This dataset is licensed under the Creative Commons Attribution-NonCommercial-Sh
 
 Sophie Balech, Christophe Benavent, and Mihai Calciu (2020), The First French COVID19 Lockdown Twitter Dataset, arXiv:2005.05075 [cs.SI]
 
+<<<<<<< HEAD
 ## Statistics Summary (v0.1 11 Months up to November 31 2020)
 Number of Tweets in French : ** 16,404,102 **
+=======
+## Statistics Summary (v0.2 55 Lockdown days up to May 11 2020)
+Number of Tweets in French: **  16,404,102 **
+>>>>>>> c478fb3306b9813000387e9e02fac028547e3c78
 
 | Month | No. tweets | % total tweets |
 | -------: | --------: |---------: |
@@ -104,7 +119,7 @@ Number of Tweets in French : ** 16,404,102 **
 | 10| 4080225| 24,87% |
 | 11| 3456930| 21,07% |
 
-# Inquiries
+# Inquiries 
 If you have technical questions about the data collection, please contact Mihai Calciu at **mihai.calciu[at]univ-lille[dot]fr**.
 
 If you have any further questions about this dataset please contact Christophe Benavent at **christophe.benavent[at]gmail[dot]com**.
