@@ -51,7 +51,7 @@ There are also three kinds of hepler files that allow for associations between n
   - date*.csv files contain the parsed date of each tweet corresponding to each annotation.
   - twtypoe*.csv files contain the type of each tweet corresponding to each annotation (original, quote, reply and retweet)
 
-### Tweet IDs files
+### Tweet IDs files 
 
 The Tweet-IDs that help recover (hydrate) all collected datasets are organized as follows:
 * Tweet-ID files are stored in one folder called CovidIds.
