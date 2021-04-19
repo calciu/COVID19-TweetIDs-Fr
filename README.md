@@ -103,11 +103,8 @@ This dataset is licensed under the Creative Commons Attribution-NonCommercial-Sh
 Sophie Balech, Christophe Benavent, and Mihai Calciu (2020), The First French COVID19 Lockdown Twitter Dataset, arXiv:2005.05075 [cs.SI]
 
 
-## Statistics Summary (v0.1 11 Months up to November 31 2020)
+## Statistics Summary (v0.1 11 months up to November 31 2020)
 Number of Tweets in French : ** 16,404,102 **
-=======
-## Statistics Summary (v0.2 55 Lockdown days up to May 11 2020)
-Number of Tweets in French: **  16,404,102 **
 
 
 | Month | No. tweets | % total tweets |
