@@ -55,17 +55,20 @@ There are also three kinds of hepler files that allow for associations between n
 
 The Tweet-IDs that help recover (hydrate) all collected datasets are organized as follows:
 * Tweet-ID files are stored in one folder called CovidIds.
-<<<<<<< HEAD
-* The file names have the following pattern: a prefix “coronavirus-tweet-id" followed by "-yyyy-mmfr-ids(_chunk).txt” where yyyy is the year (2020), mm is the month (O1 for january etc). Occasionnally there might be chunk numbers if the original monthly files have to be split into chunks if they exceed the 25 Mb github limit.
-=======
-* The file names have the following pattern: a prefix “coronavirus-tweet-id" followed by "-yyyy-mmfr-ids(_chunk).txt” where yyyy is 2020, mm is the month (O1 for january etc), optionnally there might be chunk numbers if the original monthly files have to be split into chunks if they exceed the 25 Mb github limit.
->>>>>>> c478fb3306b9813000387e9e02fac028547e3c78
+
+* The file names have the following pattern: a prefix “coronavirus-tweet-id" followed by "-yyyy-mmfr-ids(_chunk).txt” where yyyy is the year (2020), mm is the month (O1 for january etc). Occasionnally there might be chunk numbers if the original monthly files have to be split into chunks if they exceed the 25 Mb (later 50 Mb) github limit.
+
 
 ## Notes About the Data
-A few notes about this data: 
+
+A few notes about these data: 
+
 * We will be continuously maintaining this database for the foreseeable future, and will be uploading new data on a weekly basis.  
+
 * We will keep a running summary of basic statistics as we upload data in each new release. 
+
 * Consider using tools such as the [Hydrator](https://github.com/DocNow/hydrator) and [Twarc](https://github.com/DocNow/twarc) to rehydrate the Tweet IDs. Instructions for both are in the next section. 
+
 * Hydrating may take a while, and Tweets may have been deleted since our initial collection. If that is the case, unfortunately you will not be able to get the deleted Tweets from querying Twitter's API.
 
 ## How to Hydrate
@@ -83,11 +86,13 @@ pip3 install tqdm
 ```
 
 Configure Twarc with your Twitter API tokens (note you must [apply](https://developer.twitter.com/en/apply-for-access) for a Twitter developer account first in order to obtain the needed tokens). You can also configure the API tokens in the script, if unable to configure through CLI. 
+
 ```
 twarc configure
 ```
 
 Run the script. The hydrated Tweets will be stored in the same folder as the Tweet-ID file, and is saved as a compressed jsonl file
+
 ```
 python3 hydrate.py
 ```
